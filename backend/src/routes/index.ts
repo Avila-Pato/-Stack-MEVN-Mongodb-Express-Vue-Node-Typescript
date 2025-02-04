@@ -1,24 +1,39 @@
 import { Router } from "express";
+import Task from "../model/Task";
+
 const router = Router();
 
-router.get("/tasks", (req, res) => {
-  res.send("Getting tasks");
+router.get("/tasks", async (req, res) => {
+  const tasks = await Task.find();
+  res.json(tasks);
 });
 
-router.post("/tasks", (req, res) => {
-  res.send("Creating tasks");
+//crear
+router.post("/tasks", async (req, res) => {
+  const { title, description } = req.body;
+  const newTask = new Task({ title, description });
+  const savesTask = await newTask.save();
+  res.json(savesTask);
 });
 
-router.get("/tasks/:id", (req, res) => {
-  res.send("get 1 tasks");
+//Obtener por id
+router.get("/tasks/:id", async (req, res) => {
+  const tasks = await Task.findById(req.params.id);
+  res.json();
 });
 
-router.delete("/tasks/:id", (req, res) => {
-  res.send("deleted tasks");
+//Borrar delete
+router.delete("/tasks/:id", async (req, res) => {
+  const tasks = await Task.findByIdAndDelete(req.params.id);
+  res.json();
 });
 
-router.put("/tasks/:id", (req, res) => {
-  res.send("creating tasks");
+//actualizar
+router.put("/tasks/:id", async (req, res) => {
+  const updateTask = await Task.findByIdAndUpdate(req.params.id, req.body, {
+    new: true,
+  });
+  res.json(updateTask);
 });
 
 export default router;
