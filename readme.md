@@ -30,6 +30,10 @@ El servidor backend está construido con **Node.js** y **Express.js**. Se expone
 ### REFERENCIAS
 ![segunda prueba](https://github.com/user-attachments/assets/e16680a5-9879-4eba-b0a9-ef1baf5e145e)
 ### 2 REFERENCIAS
-![pimera prueba](https://github.com/user-attachments/assets/891b421c-10ad-44a7-af5c-b5ac6353532f)
+![3 prueva](https://github.com/user-attachments/assets/19bd2ff8-3dc6-48b0-9815-5fbb1bf19750)
+### 3 REFERENCIAS
+![4 tarea](https://github.com/user-attachments/assets/891ffb97-b527-423c-9023-92f7e87b6046)
+
+
 
 
