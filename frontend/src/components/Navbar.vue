@@ -16,10 +16,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <router-link class="nav-link" to="/">Tasks</router-link>
+            <router-link class="nav-link" to="/">Tareas</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/tasks/new">New Task</router-link>
+            <router-link class="nav-link" to="/tasks/new">Nueva tarea</router-link>
           </li>
         </ul>
       </div>
