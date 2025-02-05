@@ -1,14 +1,18 @@
-<script setup lang="ts">
-import { RouterView } from 'vue-router'
+<script lang="ts">
+import { defineComponent } from '@vue/runtime-core'
+import Navbar from './components/Navbar.vue'
+
+export default defineComponent({
+  name: 'App',
+  components: {
+    Navbar,
+  },
+})
 </script>
 
 <template>
   <div>
-    <h1>Hello</h1>
+    <Navbar />
     <RouterView />
   </div>
 </template>
-
-<style scoped>
-/* Tu CSS sigue igual */
-</style>
