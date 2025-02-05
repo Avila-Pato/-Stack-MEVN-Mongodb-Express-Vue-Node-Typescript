@@ -25,7 +25,7 @@ const saveTask = async () => {
 
 <template>
   <div>
-    <h1 class="card-title my-3 text-center">Create a Task</h1>
+    <h1 class="card-title my-3 text-center">Crear tarea</h1>
     <form @submit.prevent="saveTask">
       <input
         class="form-control mb-3"
