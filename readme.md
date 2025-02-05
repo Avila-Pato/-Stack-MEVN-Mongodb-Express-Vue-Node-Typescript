@@ -27,5 +27,9 @@ En el frontend, se utiliza **Vue.js** para crear una interfaz reactiva y dinámi
 
 El servidor backend está construido con **Node.js** y **Express.js**. Se expone una API RESTful que permite al frontend interactuar con la base de datos de tareas. El servidor utiliza rutas y controladores para manejar las solicitudes y actualizar el estado de las tareas.
 
+### REFERENCIAS
+![segunda prueba](https://github.com/user-attachments/assets/e16680a5-9879-4eba-b0a9-ef1baf5e145e)
+### 2 REFERENCIAS
+![pimera prueba](https://github.com/user-attachments/assets/891b421c-10ad-44a7-af5c-b5ac6353532f)
 
 
