@@ -1,14 +1,36 @@
 <template>
-  <div>
-    <h1>Detalles de la Tarea</h1>
+  <div class="container mt-5">
+    <h1 class="mb-4">Actualizar tarea</h1>
     <form @submit.prevent="handleUpdate()">
       <!-- Mostrar el título y la descripción de la tarea seleccionada -->
-      <input type="text" v-model="currentTask.title" placeholder="" />
-      <textarea v-model="currentTask.description" placeholder="Descripción de la tarea"></textarea>
-      <button>Actualizar</button>
+      <div class="mb-3">
+        <label for="title" class="form-label">Título de la tarea a actualzar</label>
+        <input
+          type="text"
+          id="title"
+          v-model="currentTask.title"
+          class="form-control"
+          placeholder="Ingrese el título de la tarea"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="description" class="form-label">Descripción de la tarea a actualizar</label>
+        <textarea
+          id="description"
+          v-model="currentTask.description"
+          class="form-control"
+          placeholder="Ingrese la descripción de la tarea"
+          rows="4"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Actualizar</button>
     </form>
 
-    <button @click="handleDelete()">Borrar</button>
+    <button @click="handleDelete()" class="btn btn-danger mt-3" style="margin-left: 10px">
+      Borrar
+    </button>
   </div>
 </template>
 
